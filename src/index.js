@@ -1,32 +1,21 @@
-//function showSelectedColor(event) {
-//  if (event.target.value.length > 0) {
-//    if (event.target.value === "blue") {
-//      alert("💙");
-//    }
-//    if (event.target.value === "red") {
-//      alert("❤️");
-//    }
-//
-//    if (event.target.value === "yellow") {
-//      alert("💛");
-//    }
-//  }
-//}
-
-//let colorSelect = document.querySelector("#color");
-//colorSelect.addEventListener("change", showSelectedColor);
 function showSelectedTimezone(event) {
   if (event.target.value.length > 1) {
     if (event.target.value === "paris") {
-      alert("Bonjour");
+      alert(`It is currently ${parisTime} in Europe/Paris`);
     }
     if (event.target.value === "sydney") {
-      alert("Hello");
+      alert(`It is currently ${sydneyTime} in Australia/Sydney`);
     }
     if (event.target.value === "tokyo") {
-      alert("Kon'nichiwa");
+      alert(`It is currently ${tokyoTime} in Asia/Tokyo`);
     }
   }
 }
 let timezoneSelect = document.querySelector("#country");
 timezoneSelect.addEventListener("change", showSelectedTimezone);
+
+let parisTime = moment().tz("Europe/Paris").format("dddd, MMMM D, YYYY HH:mm");
+let sydneyTime = moment()
+  .tz("Australia/Sydney")
+  .format("dddd, MMMM D, YYYY HH:mm");
+let tokyoTime = moment().tz("Asia/Tokyo").format("dddd, MMMM D, YYYY HH:mm");

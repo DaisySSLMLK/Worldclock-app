@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: rgba(50, 50, 50);
+  color: rgb(102, 81, 81);
   font-size: 48px;
   font-weight: 600;
   text-align: center;
@@ -18,15 +18,15 @@ h1 {
 }
 
 h2 {
-  color: rgb(75, 75, 75);
+  color: rgb(134, 112, 112);
   margin: 5px;
 }
 
 .container {
   background: linear-gradient(
     -180deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(100, 100, 100, 0.2) 100%
+    rgba(245, 235, 235, 0.4) 0%,
+    rgba(134, 112, 112, 0.4) 100%
   );
   border-radius: 5px;
   box-shadow: rgba(50, 50, 50, 0.3) 0px 3px 10px 0px;
@@ -36,8 +36,8 @@ h2 {
 }
 
 select {
-  background-color: rgb(200, 200, 200, 0.6);
-  border-color: rgba(200, 200, 200, 0.8);
+  background-color: rgb(213, 180, 180, 0.4);
+  border-color: rgba(134, 112, 112, 0.4);
   border-radius: 3px;
   padding: 10px 20px;
   text-align: left;
